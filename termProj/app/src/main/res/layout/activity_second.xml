@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".SecondActivity">
+
+
+  <TextView
+    android:id="@+id/usernametext"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="64dp"
+    android:text="USERNAME:"
+    app:layout_constraintBottom_toTopOf="@+id/passwordtext"
+    app:layout_constraintEnd_toStartOf="@+id/username2"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:ignore="HardcodedText" />
+
+  <TextView
+    android:id="@+id/passwordtext"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="60dp"
+    android:text="PASSWORD:"
+    app:layout_constraintBottom_toTopOf="@+id/NAME2"
+    app:layout_constraintEnd_toStartOf="@+id/passwordedit2"
+    app:layout_constraintHorizontal_bias="0.174"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:ignore="HardcodedText" />
+
+  <EditText
+    android:id="@+id/varname2"
+    android:layout_width="168dp"
+    android:layout_height="45dp"
+    android:layout_marginEnd="68dp"
+    android:layout_marginBottom="36dp"
+    android:hint="name"
+    android:minHeight="25dp"
+    app:layout_constraintBottom_toTopOf="@+id/varemail2"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+
+  <EditText
+    android:id="@+id/passwordedit2"
+    android:layout_width="105dp"
+    android:layout_height="55dp"
+    android:layout_marginEnd="120dp"
+    android:layout_marginBottom="32dp"
+    android:hint="password"
+    android:minHeight="25dp"
+    app:layout_constraintBottom_toTopOf="@+id/varname2"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+  <TextView
+    android:id="@+id/EMAILADDRESS2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="96dp"
+    android:text="EMAIL ADDRESS"
+    app:layout_constraintBottom_toTopOf="@+id/PHONE2"
+    app:layout_constraintEnd_toStartOf="@+id/varemail2"
+    app:layout_constraintHorizontal_bias="0.238"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:ignore="HardcodedText" />
+
+  <TextView
+    android:id="@+id/PHONE2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="76dp"
+    android:text="PHONE NUMBER"
+    app:layout_constraintBottom_toTopOf="@+id/role"
+    app:layout_constraintEnd_toStartOf="@+id/varphone2"
+    app:layout_constraintHorizontal_bias="0.266"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:ignore="HardcodedText" />
+
+  <TextView
+    android:id="@+id/NAME2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="68dp"
+    android:text="NAME"
+    app:layout_constraintBottom_toTopOf="@+id/EMAILADDRESS2"
+    app:layout_constraintEnd_toStartOf="@+id/username2"
+    app:layout_constraintHorizontal_bias="0.118"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:ignore="HardcodedText" />
+
+  <TextView
+    android:id="@+id/role"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="44dp"
+    android:layout_marginBottom="32dp"
+    android:text="ROLE"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/varrole2"
+    app:layout_constraintHorizontal_bias="0.042"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:ignore="HardcodedText" />
+
+  <EditText
+    android:id="@+id/username2"
+    android:layout_width="128dp"
+    android:layout_height="47dp"
+    android:layout_marginEnd="108dp"
+    android:hint="username"
+    android:inputType="textPersonName"
+    android:minHeight="25dp"
+    app:layout_constraintBottom_toTopOf="@+id/passwordedit2"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/button2"
+    tools:ignore="HardcodedText" />
+
+  <EditText
+    android:id="@+id/varemail2"
+    android:layout_width="202dp"
+    android:layout_height="59dp"
+    android:layout_marginEnd="36dp"
+    android:layout_marginBottom="52dp"
+    android:hint="email"
+    android:inputType="textPersonName"
+    android:minHeight="25dp"
+    app:layout_constraintBottom_toTopOf="@+id/varphone2"
+    app:layout_constraintEnd_toEndOf="parent"
+    tools:ignore="HardcodedText" />
+
+  <EditText
+    android:id="@+id/varphone2"
+    android:layout_width="201dp"
+    android:layout_height="52dp"
+    android:layout_marginEnd="44dp"
+    android:layout_marginBottom="48dp"
+    android:hint="phone number"
+    android:inputType="textPersonName"
+    android:minHeight="25dp"
+    app:layout_constraintBottom_toTopOf="@+id/varrole2"
+    app:layout_constraintEnd_toEndOf="parent"
+    tools:ignore="HardcodedText" />
+
+  <EditText
+    android:id="@+id/varrole2"
+    android:layout_width="146dp"
+    android:layout_height="47dp"
+    android:layout_marginEnd="92dp"
+    android:layout_marginBottom="24dp"
+    android:hint="introduce c or p"
+    android:minHeight="25dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    tools:ignore="HardcodedText" />
+
+  <Button
+    android:id="@+id/button2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="88dp"
+    android:onClick="goMainAct"
+    android:text="Main Activity"
+    app:layout_constraintBottom_toTopOf="@+id/varname2"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.169"
+    tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

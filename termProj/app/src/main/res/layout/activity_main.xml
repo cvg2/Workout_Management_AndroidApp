@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".MainActivity">
+
+
+  <TextView
+    android:id="@+id/usernametext"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginBottom="44dp"
+    android:text="USERNAME:"
+    android:textSize="24sp"
+    app:layout_constraintBottom_toTopOf="@+id/passwordedit"
+    app:layout_constraintEnd_toStartOf="@+id/passwordedit"
+    app:layout_constraintHorizontal_bias="0.529"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:ignore="HardcodedText" />
+
+  <TextView
+    android:id="@+id/passwordtext"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="44dp"
+    android:text="PASSWORD:"
+    android:textSize="24sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/passwordedit"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:ignore="HardcodedText" />
+
+
+  <EditText
+    android:id="@+id/usernameedit"
+    android:layout_width="0dp"
+    android:layout_height="48dp"
+    android:layout_marginStart="32dp"
+    android:hint="name"
+    android:minHeight="25dp"
+    app:layout_constraintBottom_toBottomOf="@+id/usernametext"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toEndOf="@+id/usernametext" />
+
+  <EditText
+    android:id="@+id/passwordedit"
+    android:layout_width="105dp"
+    android:layout_height="55dp"
+    android:layout_marginEnd="48dp"
+    android:hint="password"
+    android:minHeight="25dp"
+    app:layout_constraintBottom_toBottomOf="@+id/passwordtext"
+    app:layout_constraintEnd_toEndOf="parent" />
+
+  <Button
+    android:id="@+id/Login"
+    android:layout_width="wrap_content"
+    android:layout_height="59dp"
+    android:layout_marginTop="116dp"
+    android:text="LOGIN"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:ignore="HardcodedText,TextSizeCheck" />
+
+  <Button
+    android:id="@+id/signup"
+    android:layout_width="wrap_content"
+    android:layout_height="59dp"
+    android:text="SIGN UP"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/Login"
+    tools:ignore="HardcodedText,TextSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
