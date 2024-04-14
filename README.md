@@ -1,1 +1,4 @@
 # Workout_Management_AndroidApp
+
+Implementation of an app with a user management with login and user registration, data persistency with MySQL Lite and 5 different activities. The idea of this project is to have a platform for basketball teams where coaches and players could register and keep track of their stats when they work out. 
+The app starts displaying an activity where a user can login or sign up. Depending on if the user is a coach or a player another activity will be display after the login is successfully done. If it’s a coach a list of players will be display so they can look at the details of each player and their stats. If a player login they can start the workout and an activity will be displayed with two buttons made or miss so whey they get back to the details their stats will be displayed.
